@@ -1,7 +1,9 @@
 Funcursive
 ==========
 
-Funcursive is a simple framework for creating recursive Actions and Funcs in C#. Let's take a look at a simple example. The following method uses a Func to increment a method variable:
+Funcursive is a simple framework for creating recursive Actions and Funcs in C#. 
+
+Let's take a look at a simple example. The following method uses a Func to increment a method variable:
 
 public int Method1()
 {
