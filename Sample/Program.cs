@@ -77,7 +77,7 @@
             int x = 0;
 
             // Create an asynchronous, recursive action taking one parameter as input.
-            Func<int, Task> a = ActionR<int>.CreateAsync(async (value, self) =>
+            Func<int, Task> a = ActionR<int>.Create(async (value, self) =>
             {
                 // Loop recursively until value is reached.
                 if (x < value)
@@ -126,7 +126,7 @@
             int x = 0;
 
             // Create a asynchronous, recursive func taking one parameter as input and returning a string.
-            Func<int, Task<string>> a = FuncR<int, string>.CreateAsync(async (value, self) =>
+            Func<int, Task<string>> a = FuncR<int, string>.Create(async (value, self) =>
             {
                 // Loop recursively until value is reached.
                 string s = x + ",";

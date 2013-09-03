@@ -29,7 +29,7 @@
         /// </summary>
         /// <param name="f">The inner Func.</param>
         /// <returns>The created Func.</returns>
-        public static Func<T1, T2, Task<TResult>> CreateAsync(Func<T1, T2, Func<T1, T2, Task<TResult>>, Task<TResult>> f)
+        public static Func<T1, T2, Task<TResult>> Create(Func<T1, T2, Func<T1, T2, Task<TResult>>, Task<TResult>> f)
         {
             return Create<Task<TResult>>(f);
         }
@@ -55,7 +55,7 @@
         /// <returns>Returns the result of the Func as a task.</returns>
         public static Task<TResult> InvokeAsync(T1 value1, T2 value2, Func<T1, T2, Func<T1, T2, Task<TResult>>, Task<TResult>> f)
         {
-            return CreateAsync(f)(value1, value2);
+            return Create(f)(value1, value2);
         }
 
         /// <summary>

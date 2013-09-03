@@ -41,7 +41,7 @@
         /// </summary>
         /// <param name="a">The inner Action.</param>
         /// <returns>The created Action.</returns>
-        public static Func<T, Task> CreateAsync(Func<T, Func<T, Task>, Task> a)
+        public static Func<T, Task> Create(Func<T, Func<T, Task>, Task> a)
         {
             if (a == null)
             {
@@ -78,7 +78,7 @@
         /// <returns>Returns the Action as a task.</returns>
         public static Task InvokeAsync(T value, Func<T, Func<T, Task>, Task> a)
         {
-            return CreateAsync(a)(value);
+            return Create(a)(value);
         }
     }
 }

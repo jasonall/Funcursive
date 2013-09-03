@@ -73,7 +73,7 @@ Recursion is cool, but this method runs synchronously, and sync is for wussies. 
 	{
 		int x = 0;
 
-		Func<int, Task<int>> f = FuncR<int, int>.CreateAsync(async (limit, self) =>
+		Func<int, Task<int>> f = FuncR<int, int>.Create(async (limit, self) =>
 		{
 			int v = x;
 			if (x < limit)
@@ -115,7 +115,7 @@ And of course, this can be async too:
 	{
 		int x = 0;
 
-		Func<int, Task> a = ActionR<int>.CreateAsync(async (limit, self) =>
+		Func<int, Task> a = ActionR<int>.Create(async (limit, self) =>
 		{
 			if (x < limit)
 			{
