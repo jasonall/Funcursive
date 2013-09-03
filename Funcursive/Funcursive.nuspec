@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>jasonall@outlook.com</authors>
+    <owners>jasonall@outlook.com</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <projectUrl>https://github.com/jasonall/Funcursive</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Recursive Func library for C#</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>Func Action Recursive Recursion</tags>
+  </metadata>
+</package>

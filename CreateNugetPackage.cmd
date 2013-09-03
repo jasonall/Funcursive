@@ -1,0 +1,1 @@
+nuget pack Funcursive\Funcursive.csproj -Prop Configuration=Release
