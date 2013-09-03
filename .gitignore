@@ -1,0 +1,21 @@
+#User Settings
+*.suo
+*.user
+
+#Temporary files
+*.bak
+*.cache
+
+#Packages
+*.nupkg
+
+#Perf logs
+*.sap
+
+#Folders
+bin/
+obj/
+App_Data/
+packages/
+TestResults/
+PerfLogs/
