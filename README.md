@@ -67,7 +67,7 @@ But loops are for wussies. Let's use FuncR to create a recursive func:
 
 To create the recursive func, we call FuncR<TValue, TResult>.Create, and pass in a lambda. Notice that the lambda takes in a new parameter, named 'self'. We can use this parameter to recurse back into the Func. When we run this method, x and y still end up with the value 5.
 
-Recursive is cool, but this method runs synchronously, and sync is for wussies. Let's make it async:
+Recursion is cool, but this method runs synchronously, and sync is for wussies. Let's make it async:
 
 	public async Task<int> Method1()
 	{
