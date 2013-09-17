@@ -57,7 +57,7 @@ Recursion is cool, but this method runs synchronously, and sync is for wussies. 
 			if (x < limit)
 			{
 				x = await Task.FromResult<int>(x + 1);
-				v = await self(limit);
+				await self(limit);
 			}
 
 			return x;
