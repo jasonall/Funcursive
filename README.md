@@ -38,7 +38,7 @@ But loops are for wussies. Let's use FuncR to create a recursive func:
 				self(limit);
 			}
 
-                        return x;
+			return x;
 		});
 
 		int y = f(5);
